@@ -1,11 +1,6 @@
 <%@ page import="com.blog.dto.ArticleDTO" %>
-<%@ page import="java.util.List" %><%--
-  Created by IntelliJ IDEA.
-  User: az102
-  Date: 2020/12/14
-  Time: 1:12
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="java.util.List" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <!DOCTYPE html>
@@ -125,7 +120,7 @@
                         <img src="images/Absolutely.jpg" alt="Absolutely" />
                     </div>
                     <p class="blogerinfo-nickname">第九组</p>
-                    <p class="blogerinfo-introduce">第九组全部来自计科231 325寝</p>
+                    <p class="blogerinfo-introduce">本小组成员全部来自计科231 325寝</p>
                     <p class="blogerinfo-location"><i class="fa fa-location-arrow"></i>&nbsp;宁夏 - 北方民族大学</p>
                     <hr />
                     <div class="blogerinfo-contact">
@@ -150,53 +145,42 @@
                 <div class="blog-module shadow">
                     <div class="blog-module-title">最近分享</div>
                     <ul class="fa-ul blog-module-ul">
-                        <li><i class="fa-li fa fa-hand-o-right"></i><a href="http://pan.baidu.com/s/1c1BJ6Qc" target="_blank">Canvas</a></li>
-                        <li><i class="fa-li fa fa-hand-o-right"></i><a href="http://pan.baidu.com/s/1kVK8UhT" target="_blank">pagesize.js</a></li>
-                        <li><i class="fa-li fa fa-hand-o-right"></i><a href="https://pan.baidu.com/s/1mit2aiW" target="_blank">时光轴</a></li>
-                        <li><i class="fa-li fa fa-hand-o-right"></i><a href="https://pan.baidu.com/s/1nuAKF81" target="_blank">图片轮播</a></li>
+                        <li><i class="fa-li fa fa-hand-o-right"></i><a href="detail.jsp" target="_blank">Canvas</a></li>
+                        <li><i class="fa-li fa fa-hand-o-right"></i><a href="detail.jsp" target="_blank">pagesize.js</a></li>
+                        <li><i class="fa-li fa fa-hand-o-right"></i><a href="detail.jsp" target="_blank">时光轴</a></li>
+                        <li><i class="fa-li fa fa-hand-o-right"></i><a href="detail.jsp" target="_blank">图片轮播</a></li>
                     </ul>
                 </div>
                 <div class="blog-module shadow">
                     <div class="blog-module-title">一路走来</div>
                     <dl class="footprint">
-                        <dt>2017年03月12日</dt>
+                        <dt>2025年10月12日</dt>
                         <dd>新增留言回复功能！人人都可参与回复！</dd>
-                        <dt>2017年03月10日</dt>
-                        <dd>不落阁2.0基本功能完成，正式上线！</dd>
-                        <dt>2017年03月09日</dt>
+                        <dt>2025年10月10日</dt>
+                        <dd>博客2.0基本功能完成，正式上线！</dd>
+                        <dt>2025年10月09日</dt>
                         <dd>新增文章搜索功能！</dd>
-                        <dt>2017年02月25日</dt>
+                        <dt>2025年10月25日</dt>
                         <dd>QQ互联接入网站，可QQ登陆发表评论与留言！</dd>
                     </dl>
                 </div>
                 <div class="blog-module shadow">
                     <div class="blog-module-title">后台记录</div>
                     <dl class="footprint">
-                        <dt>2017年03月16日</dt>
+                        <dt>2025年10月16日</dt>
                         <dd>分页新增页容量控制</dd>
-                        <dt>2017年03月12日</dt>
+                        <dt>2025年10月12日</dt>
                         <dd>新增管家提醒功能</dd>
-                        <dt>2017年03月10日</dt>
+                        <dt>2025年10月10日</dt>
                         <dd>新增Win10快捷菜单</dd>
                     </dl>
-                </div>
-                <div class="blog-module shadow">
-                    <div class="blog-module-title">友情链接</div>
-                    <ul class="blogroll">
-                        <li><a target="_blank" href="http://www.layui.com/" title="Layui">Layui</a></li>
-                        <li><a target="_blank" href="http://www.pagemark.cn/" title="页签">页签</a></li>
-                    </ul>
                 </div>
             </div>
             <div class="clear"></div>
         </div>
     </div>
 </div>
-<!-- 底部 -->
-<footer class="blog-footer">
-    <p><span>Copyright</span><span>&copy;</span><span>2017</span><a href="http://www.lyblogs.cn">不落阁</a><span>Design By LY</span></p>
-    <p><a href="http://www.miibeian.gov.cn/" target="_blank">蜀ICP备16029915号-1</a></p>
-</footer>
+
 <!--侧边导航-->
 <ul class="layui-nav layui-nav-tree layui-nav-side blog-nav-left layui-hide" lay-filter="nav">
     <li class="layui-nav-item layui-this">

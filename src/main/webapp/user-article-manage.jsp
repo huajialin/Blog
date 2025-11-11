@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: az102
-  Date: 2020/12/17
-  Time: 0:02
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page import="com.blog.dto.UserDTO" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>

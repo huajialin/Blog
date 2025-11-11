@@ -1,10 +1,5 @@
-<%@ page import="com.blog.dto.AdminUserDTO" %><%--
-  Created by IntelliJ IDEA.
-  User: az102
-  Date: 2020/12/14
-  Time: 0:58
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="com.blog.dto.AdminUserDTO" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="zh-CN">
@@ -13,7 +8,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>栏目 - 异清轩博客管理系统</title>
+    <title>栏目 - 博客管理系统</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
@@ -132,7 +127,7 @@
                         <tbody>
                         <tr>
                             <td wdith="20%">姓名:</td>
-                            <td width="80%"><input type="text" value="王雨" class="form-control" name="truename" maxlength="10" autocomplete="off" /></td>
+                            <td width="80%"><input type="text" value="小晴" class="form-control" name="truename" maxlength="10" autocomplete="off" /></td>
                         </tr>
                         <tr>
                             <td wdith="20%">用户名:</td>
@@ -247,11 +242,11 @@
 <!--右键菜单列表-->
 <div id="rightClickMenu">
     <ul class="list-group rightClickMenuList">
-        <li class="list-group-item disabled">欢迎访问异清轩博客</li>
+        <li class="list-group-item disabled">欢迎访问博客</li>
         <li class="list-group-item"><span>IP：</span>172.16.10.129</li>
-        <li class="list-group-item"><span>地址：</span>河南省郑州市</li>
+        <li class="list-group-item"><span>地址：</span>宁夏银川</li>
         <li class="list-group-item"><span>系统：</span>Windows10 </li>
-        <li class="list-group-item"><span>浏览器：</span>Chrome47</li>
+        <li class="list-group-item"><span>浏览器：</span>edge</li>
     </ul>
 </div>
 <script src="../js/bootstrap.min.js"></script>

@@ -1,18 +1,7 @@
-<%@ page import="com.blog.dto.ArticleDTO" %><%--
-  Created by IntelliJ IDEA.
-  User: az102
-  Date: 2020/12/14
-  Time: 1:12
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="com.blog.dto.ArticleDTO" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!--
 
-@Name：不落阁整站模板源码
-@Author：Absolutely
-@Site：http://www.lyblogs.cn
-
--->
 
 <!DOCTYPE html>
 
@@ -21,7 +10,7 @@
     <meta http-equiv="Content-Type" content="text/html; Charset=gb2312">
     <meta http-equiv="Content-Language" content="zh-CN">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>不落阁 - 文章专栏 - 基于layui的laypage扩展模块！</title>
+    <title>博客 - 文章专栏 - 扩展模块！</title>
     <link rel="shortcut icon" href="images/Logo_40.png" type="image/x-icon">
     <!--Layui-->
     <link href="plug/layui/css/layui.css" rel="stylesheet" />
@@ -36,7 +25,14 @@
     <!-- 获取转发过来的文章信息-->
     <%
         Object articleObj = request.getAttribute("articleDTO");
-        ArticleDTO articleDTO = (ArticleDTO) articleObj;
+        ArticleDTO articleDTO = null; // 初始化变量
+        if (articleObj != null && articleObj instanceof ArticleDTO) {
+            articleDTO = (ArticleDTO) articleObj; // 有效时赋值
+        } else {
+            // 无效时提示并跳转，终止后续执行
+            out.println("<script>alert('文章不存在或已被删除'); window.location.href='index.jsp';</script>");
+            return;
+        }
     %>
 </head>
 <body>
@@ -147,11 +143,7 @@
         </div>
     </div>
 </div>
-<!-- 底部 -->
-<footer class="blog-footer">
-    <p><span>Copyright</span><span>&copy;</span><span>2017</span><a href="http://www.lyblogs.cn">不落阁</a><span>Design By LY</span></p>
-    <p><a href="http://www.miibeian.gov.cn/" target="_blank">蜀ICP备16029915号-1</a></p>
-</footer>
+
 <!--侧边导航-->
 <ul class="layui-nav layui-nav-tree layui-nav-side blog-nav-left layui-hide" lay-filter="nav">
     <li class="layui-nav-item">

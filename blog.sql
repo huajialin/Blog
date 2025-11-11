@@ -1,18 +1,3 @@
-/*
-Navicat MySQL Data Transfer
-
-Source Server         : localhost_3306
-Source Server Version : 50620
-Source Host           : localhost:3306
-Source Database       : blog
-
-Target Server Type    : MYSQL
-Target Server Version : 50620
-File Encoding         : 65001
-
-Date: 2021-12-21 02:44:34
-*/
-
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
@@ -95,8 +80,8 @@ CREATE TABLE `t_user` (
 -- ----------------------------
 -- Records of t_user
 -- ----------------------------
-INSERT INTO `t_user` VALUES ('1', '幺幺的小奶狗', 'drg435433');
+INSERT INTO `t_user` VALUES ('1', '幺幺的小奶狗', '123456');
 INSERT INTO `t_user` VALUES ('2', '令狐冲', '123456');
-INSERT INTO `t_user` VALUES ('3', 'Coder_木子', 'cosuh876');
-INSERT INTO `t_user` VALUES ('4', '鹏鹏写代码', 'uhyg767');
-INSERT INTO `t_user` VALUES ('5', '令狐公子', 'sad868');
+INSERT INTO `t_user` VALUES ('3', 'Coder_木子', '123456');
+INSERT INTO `t_user` VALUES ('4', '鹏鹏写代码', '123456');
+INSERT INTO `t_user` VALUES ('5', '令狐公子', '123456');

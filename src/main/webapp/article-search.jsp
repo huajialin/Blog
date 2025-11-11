@@ -1,11 +1,5 @@
 <%@ page import="com.blog.dto.ArticleDTO" %>
-<%@ page import="java.util.List" %><%--
-  Created by IntelliJ IDEA.
-  User: az102
-  Date: 2020/12/18
-  Time: 11:54
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 
@@ -14,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; Charset=gb2312">
     <meta http-equiv="Content-Language" content="zh-CN">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>不落阁 - 文章专栏</title>
+    <title>博客 - 文章专栏</title>
     <link rel="shortcut icon" href="images/Logo_40.png" type="image/x-icon">
     <!--Layui-->
     <link href="plug/layui/css/layui.css" rel="stylesheet" />
@@ -122,11 +116,7 @@
         </div>
     </div>
 </div>
-<!-- 底部 -->
-<footer class="blog-footer">
-    <p><span>Copyright</span><span>&copy;</span><span>2017</span><a href="http://www.lyblogs.cn">不落阁</a><span>Design By LY</span></p>
-    <p><a href="http://www.miibeian.gov.cn/" target="_blank">蜀ICP备16029915号-1</a></p>
-</footer>
+
 <!--侧边导航-->
 <ul class="layui-nav layui-nav-tree layui-nav-side blog-nav-left layui-hide" lay-filter="nav">
     <li class="layui-nav-item">

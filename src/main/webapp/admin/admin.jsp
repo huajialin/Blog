@@ -1,10 +1,4 @@
-<%@ page import="com.blog.dto.AdminUserDTO" %><%--
-  Created by IntelliJ IDEA.
-  User: az102
-  Date: 2020/12/14
-  Time: 0:53
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="com.blog.dto.AdminUserDTO" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="zh-CN">
@@ -13,7 +7,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>异清轩博客管理系统</title>
+    <title>博客管理系统</title>
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
@@ -85,7 +79,7 @@
                         <td>登录者: <span>admin</span>，这是您第 <span>13</span> 次登录</td>
                     </tr>
                     <tr>
-                        <td>上次登录时间: 2016-01-08 15:50:28 , 上次登录IP: ::1:55570</td>
+                        <td>上次登录时间: 2025-11-08 15:50:28 , 上次登录IP: ::1:55570</td>
                     </tr>
                     </tbody>
                 </table>
@@ -99,13 +93,13 @@
                     <tbody>
                     <tr>
                         <td>管理员个数:</td>
-                        <td>2 人</td>
+                        <td>1 人</td>
                         <td>服务器软件:</td>
-                        <td>Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9</td>
+                        <td>Apache11 (Win64) OpenSSL/1.0.1i mod_fcgid/2.3.9</td>
                     </tr>
                     <tr>
                         <td>浏览器:</td>
-                        <td>Chrome47</td>
+                        <td>edge</td>
                         <td>PHP版本:</td>
                         <td>5.6.1</td>
                     </tr>
@@ -145,7 +139,7 @@
                     <table class="table table-striped table-hover">
                         <tbody>
                         <tr>
-                            <td><span style="display:inline-block; width:8em">版权所有</span> POWERED BY WY ALL RIGHTS RESERVED</td>
+                            <td><span style="display:inline-block; width:8em">程序状态</span> Loading complete</td>
                         </tr>
                         <tr>
                             <td><span style="display:inline-block;width:8em">页面加载时间</span> PROCESSED IN 1.0835s  SECONDS </td>
@@ -174,7 +168,7 @@
                         <tbody>
                         <tr>
                             <td wdith="20%">姓名:</td>
-                            <td width="80%"><input type="text" value="王雨" class="form-control" name="truename" maxlength="10" autocomplete="off" /></td>
+                            <td width="80%"><input type="text" value="小晴" class="form-control" name="truename" maxlength="10" autocomplete="off" /></td>
                         </tr>
                         <tr>
                             <td wdith="20%">用户名:</td>
@@ -289,11 +283,11 @@
 <!--右键菜单列表-->
 <div id="rightClickMenu">
     <ul class="list-group rightClickMenuList">
-        <li class="list-group-item disabled">欢迎访问异清轩博客</li>
+        <li class="list-group-item disabled">欢迎访问博客</li>
         <li class="list-group-item"><span>IP：</span>172.16.10.129</li>
-        <li class="list-group-item"><span>地址：</span>河南省郑州市</li>
+        <li class="list-group-item"><span>地址：</span>宁夏银川</li>
         <li class="list-group-item"><span>系统：</span>Windows10 </li>
-        <li class="list-group-item"><span>浏览器：</span>Chrome47</li>
+        <li class="list-group-item"><span>浏览器：</span>edge</li>
     </ul>
 </div>
 <script src="../js/bootstrap.min.js"></script>

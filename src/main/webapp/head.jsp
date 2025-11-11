@@ -24,8 +24,8 @@
         <a class="blog-user" href="loginOut.do" style="color: #FFFFFF;">退出</a>
     </c:otherwise>
 </c:choose>
-<!-- 不落阁 -->
-<a class="blog-logo" href="index.jsp">不落阁</a>
+
+<a class="blog-logo" href="index.jsp">博客</a>
 <!-- 导航菜单 -->
 <ul class="layui-nav" lay-filter="nav" style="text-align:left;padding-left:100px;">
     <li class="layui-nav-item layui-this">
