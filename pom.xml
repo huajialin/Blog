@@ -3,44 +3,51 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.blog</groupId> <!-- 建议修改为项目实际groupId，如com.blog -->
-    <artifactId>blog-project</artifactId> <!-- 项目名称，如blog-project -->
+    <groupId>com.blog</groupId>
+    <artifactId>blog-project</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source> <!-- JDK 17 编译 -->
+        <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jakarta.servlet.version>6.0.0</jakarta.servlet.version> <!-- 适配 Tomcat 11 -->
-        <fastjson.version>2.0.32</fastjson.version> <!-- FastJSON 稳定版本 -->
-        <mysql.version>8.3.0</mysql.version> <!-- MySQL 驱动版本 -->
+        <jakarta.servlet.version>6.0.0</jakarta.servlet.version>
+        <fastjson.version>2.0.32</fastjson.version>
+        <mysql.version>8.3.0</mysql.version>
+        <jstl.impl.version>3.0.1</jstl.impl.version> <!-- JSTL实现版本 -->
     </properties>
 
     <dependencies>
-        <!-- 1. Jakarta Servlet 核心依赖（替代 javax.servlet） -->
+        <!-- 1. Jakarta Servlet 核心依赖 -->
         <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
             <version>${jakarta.servlet.version}</version>
-            <scope>provided</scope> <!-- Tomcat 11 已内置，无需打包 -->
+            <scope>provided</scope>
         </dependency>
 
-        <!-- 2. JSTL 依赖（若 JSP 中使用 EL 表达式或 JSTL 标签） -->
+        <!-- 2. JSTL 依赖（API + 实现） -->
         <dependency>
             <groupId>jakarta.servlet.jsp.jstl</groupId>
             <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
             <version>3.0.0</version>
         </dependency>
+        <!-- 补充JSTL实现类（解决标签无法解析问题） -->
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+            <version>${jstl.impl.version}</version>
+        </dependency>
 
-        <!-- 3. FastJSON 依赖（解决 com.alibaba.fastjson 无法解析的问题） -->
+        <!-- 3. FastJSON 依赖 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
         </dependency>
 
-        <!-- 4. MySQL 数据库驱动（博客项目需操作数据库） -->
+        <!-- 4. MySQL 数据库驱动 -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
@@ -50,16 +57,16 @@
     </dependencies>
 
     <build>
-        <finalName>blog-project</finalName> <!-- 打包后的 WAR 包名称，建议与 artifactId 一致 -->
+        <finalName>blog-project</finalName>
         <plugins>
-            <!-- 确保 Web 资源正确打包（webapp 目录下的 JSP、CSS 等） -->
+            <!-- Web资源打包插件 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.2</version>
             </plugin>
 
-            <!-- 编译插件（确保 JDK 版本正确） -->
+            <!-- 编译插件 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

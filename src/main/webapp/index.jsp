@@ -7,13 +7,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!--
-
-@Name：不落阁整站模板源码
-@Author：Absolutely
-@Site：http://www.lyblogs.cn
-
--->
 
 <!DOCTYPE html>
 
@@ -22,7 +15,7 @@
     <meta http-equiv="Content-Type" content="text/html; Charset=gb2312">
     <meta http-equiv="Content-Language" content="zh-CN">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>不落阁 - 一个JAVA程序员的个人博客网站</title>
+    <title>博客</title>
     <link rel="shortcut icon" href="images/Logo_40.png" type="image/x-icon">
     <!--Layui-->
     <link href="plug/layui/css/layui.css" rel="stylesheet" />
@@ -102,10 +95,10 @@
             <div class="home-tips shadow">
                 <i style="float:left;line-height:17px;" class="fa fa-volume-up"></i>
                 <div class="home-tips-container">
-                    <span style="color: #009688">偷偷告诉大家，本博客的后台管理也正在制作，为大家准备了游客专用账号！</span>
-                    <span style="color: red">网站新增留言回复啦！使用QQ登陆即可回复，人人都可以回复！</span>
-                    <span style="color: red">如果你觉得网站做得还不错，来Fly社区点个赞吧！<a href="http://fly.layui.com/case/2017/" target="_blank" style="color:#01AAED">点我前往</a></span>
-                    <span style="color: #009688">不落阁 &nbsp;—— &nbsp;一个.NET程序员的个人博客，新版网站采用Layui为前端框架，目前正在建设中！</span>
+                    <span style="color: #009688">本博客的后台管理也正在制作，为大家准备了游客专用账号！</span>
+                    <span style="color: red">网站新增留言回复！登陆即可回复，人人都可以回复！</span>
+                    <span style="color: red">如果你觉得网站做得还不错，来gitee社区点个赞吧！<a href="https://gitee.com/huajialin/blog" target="_blank" style="color:#01AAED">点我前往</a></span>
+                    <span style="color: #009688">个人博客目前正在建设中！</span>
                 </div>
             </div>
             <!--左边文章列表-->
@@ -131,15 +124,13 @@
                     <div class="blogerinfo-figure">
                         <img src="images/Absolutely.jpg" alt="Absolutely" />
                     </div>
-                    <p class="blogerinfo-nickname">Absolutely</p>
-                    <p class="blogerinfo-introduce">一枚90后程序员，JAVA开发工程师</p>
-                    <p class="blogerinfo-location"><i class="fa fa-location-arrow"></i>&nbsp;四川 - 成都</p>
+                    <p class="blogerinfo-nickname">第九组</p>
+                    <p class="blogerinfo-introduce">第九组全部来自计科231 325寝</p>
+                    <p class="blogerinfo-location"><i class="fa fa-location-arrow"></i>&nbsp;宁夏 - 北方民族大学</p>
                     <hr />
                     <div class="blogerinfo-contact">
-                        <a target="_blank" title="QQ交流" href="javascript:layer.msg('启动QQ会话窗口')"><i class="fa fa-qq fa-2x"></i></a>
-                        <a target="_blank" title="给我写信" href="javascript:layer.msg('启动邮我窗口')"><i class="fa fa-envelope fa-2x"></i></a>
-                        <a target="_blank" title="新浪微博" href="javascript:layer.msg('转到你的微博主页')"><i class="fa fa-weibo fa-2x"></i></a>
-                        <a target="_blank" title="码云" href="javascript:layer.msg('转到你的github主页')"><i class="fa fa-git fa-2x"></i></a>
+                        <a target="_blank" title="码云" href="https://gitee.com/huajialin/blog"><i class="fa fa-git fa-2x"></i></a>
+                        <a target="_blank" title="github" href="https://github.com/huajialin/Blog"><i class="fa fa-github fa-2x"></i></a>
                     </div>
                 </div>
                 <div></div><!--占位-->

@@ -20,10 +20,10 @@ public class JDBCUtils {
 
     //数据库连接操作
     public void init() throws Exception {
-        Class.forName("org.gjt.mm.mysql.Driver");
+        Class.forName("com.mysql.cj.jdbc.Driver");
         String url = "jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=UTF8&autoReconnect=true&autoReconnectForPools=true";
         String user = "root";
-        String pwd = "root";
+        String pwd = "huajl0514";
         conn = DriverManager.getConnection(url, user, pwd);
     }
 
