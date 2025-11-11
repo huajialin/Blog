@@ -1,3 +1,8 @@
+CREATE DATABASE IF NOT EXISTS blog DEFAULT CHARSET utf8;
+
+USE blog;
+
+
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
