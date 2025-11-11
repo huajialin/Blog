@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <!-- 1. 欢迎页配置（对应 src/main/webapp 下的首页文件） -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file> <!-- 博客首页，迁移自原 WebContent/index.jsp -->
+    </welcome-file-list>
+
+    <!-- 2. 核心 Servlet 配置（对应 com.blog.servlet 包下的实际类） -->
+    <!-- 文章管理 Servlet（处理文章列表、详情、发布等请求） -->
+    <servlet>
+        <servlet-name>ArticleServlet</servlet-name>
+        <servlet-class>com.blog.servlet.ArticleServlet</servlet-class> <!-- 必须与源码类名一致 -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ArticleServlet</servlet-name>
+        <url-pattern>/article/*</url-pattern> <!-- 匹配所有 /article 开头的请求（如 /article/list） -->
+    </servlet-mapping>
+
+    <!-- 用户管理 Servlet（处理登录、注册、个人信息等请求） -->
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.blog.servlet.UserServlet</servlet-class> <!-- 必须与源码类名一致 -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/user/*</url-pattern> <!-- 匹配所有 /user 开头的请求（如 /user/login） -->
+    </servlet-mapping>
+</web-app>
