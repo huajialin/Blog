@@ -120,7 +120,7 @@
                         <img src="images/Absolutely.jpg" alt="Absolutely" />
                     </div>
                     <p class="blogerinfo-nickname">第九组</p>
-                    <p class="blogerinfo-introduce">本小组成员全部来自计科231 325寝</p>
+                    <p class="blogerinfo-introduce">本小组成员来自计科231</p>
                     <p class="blogerinfo-location"><i class="fa fa-location-arrow"></i>&nbsp;宁夏 - 北方民族大学</p>
                     <hr />
                     <div class="blogerinfo-contact">
