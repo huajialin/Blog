@@ -120,7 +120,7 @@
                         <img src="images/Absolutely.jpg" alt="Absolutely" />
                     </div>
                     <p class="blogerinfo-nickname">第九组</p>
-                    <p class="blogerinfo-introduce">本小组成员来自计科231</p>
+                    <p class="blogerinfo-introduce">本小组成员+来自计科231</p>
                     <p class="blogerinfo-location"><i class="fa fa-location-arrow"></i>&nbsp;宁夏 - 北方民族大学</p>
                     <hr />
                     <div class="blogerinfo-contact">
@@ -128,7 +128,7 @@
                         <a target="_blank" title="github" href="https://github.com/huajialin/Blog"><i class="fa fa-github fa-2x"></i></a>
                     </div>
                 </div>
-                <div></div><!--占位-->
+                <div></div><!--占位-->占位
                 <div class="blog-module shadow">
                     <div class="blog-module-title">热文排行</div>
                     <ul class="fa-ul blog-module-ul">
