@@ -23,7 +23,7 @@ public class JDBCUtils {
         Class.forName("com.mysql.cj.jdbc.Driver");
         String url = "jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=UTF8&autoReconnect=true&autoReconnectForPools=true";
         String user = "root";
-        String pwd = "huajl0514";
+        String pwd = "123456";
         conn = DriverManager.getConnection(url, user, pwd);
     }
 
